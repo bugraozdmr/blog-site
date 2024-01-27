@@ -17,4 +17,3 @@
 /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/obj/Debug/net6.0/refint/Presentation.dll
 /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/obj/Debug/net6.0/Presentation.pdb
 /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/obj/Debug/net6.0/ref/Presentation.dll
-/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/obj/Debug/net6.0/Presentation.sourcelink.json

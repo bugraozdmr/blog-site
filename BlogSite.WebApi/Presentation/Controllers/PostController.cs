@@ -51,6 +51,16 @@ public class PostController : ControllerBase
         return Ok(new { data = post });
     }
     
+    [HttpGet("get/{slug}")]
+    public async Task<IActionResult> GetPostFromSlug([FromRoute(Name = "slug")] string slug)
+    {
+        var post = await _manager.PostService.GetOnePostFromSlug(slug, false);
+
+        return Ok(new { data = post });
+    }
+
+    
+    
     [ServiceFilter(typeof(ValidationFilterAttribute))]
     [HttpPost]
     public async Task<IActionResult> CreateOneBookAsync([FromBody] PostDtoForInsertion postDto)

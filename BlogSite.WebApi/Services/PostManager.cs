@@ -35,9 +35,9 @@ public class PostManager : IPostService
             .GetAllPostsAsync(postParemeters, trackChanges);
 
         var postsDto = _mapper.Map<IEnumerable<PostDto>>(booksWithMetaData);
-
+        
         var shapedData = _shaper.ShapeData(postsDto, postParemeters.Fields);
-
+        
         return (shapedData, booksWithMetaData.MetaData);
     }
 
@@ -47,6 +47,18 @@ public class PostManager : IPostService
         return _mapper.Map<PostDto>(post);
     }
 
+    public async Task<PostDto> GetOnePostFromSlug(string slug, bool trackChanges)
+    {
+        var entity = await _manager.Post.GetPostFromSlug(slug, trackChanges);
+
+        if (entity is null)
+        {
+            throw new PostNotFoundException(404);
+        }
+
+        return _mapper.Map<PostDto>(entity);
+    }
+    
     public async Task<PostDto> CreateOnePostAsync(PostDtoForInsertion post)
     {
         post.CreatedAt = DateTime.UtcNow;

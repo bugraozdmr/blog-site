@@ -9,6 +9,7 @@ public interface IPostRepository
         bool trackChanges);
 
     Task<Post> GetOnePostByidAsync(int id, bool trackChanges);
+    Task<Post> GetPostFromSlug(string slug, bool trackChanges);
     void CreateOnePost(Post post);
     void UpdateOnePost(Post post);
     void DeleteOnePost(Post post);

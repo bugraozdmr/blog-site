@@ -1,3 +1,5 @@
+@model MainDto;
+
 @{
     Layout = null;
 }
@@ -11,9 +13,9 @@
         <!-- Navigation-->
         @await Component.InvokeAsync("_NavBarPartial")
         <!-- Page Header-->
-        @await Component.InvokeAsync("_CoverPartial")
+        @await Component.InvokeAsync("_CoverPartial",Model)
         <!-- post Content-->
-        @await Html.PartialAsync("Content");
+        @await Html.PartialAsync("Content",Model);
         <!-- Footer-->
         @await Component.InvokeAsync("_FooterPartial")
         <!-- Js -->

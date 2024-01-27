@@ -33,6 +33,10 @@ public sealed class PostRepository : RepositoryBase<Post> , IPostRepository
         await FindByCondition(b => b.Id.Equals(id), trackChanges)
             .SingleOrDefaultAsync();
 
+    public async Task<Post> GetPostFromSlug(string slug, bool trackChanges) =>
+        await FindByCondition(p => p.Slug.Equals(slug), trackChanges)
+            .SingleOrDefaultAsync();
+    
     public void CreateOnePost(Post post) => Create(post);
 
     public void UpdateOnePost(Post post) => Update(post);

@@ -14,5 +14,5 @@ public record PostDto
     public DateTime? CreatedAt { get; set; }
     
     // REPLACE TR KARAKTER YAZ
-    public string Slug;
+    public string Slug { get; set; }
 }

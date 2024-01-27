@@ -11,6 +11,7 @@ public interface IPostService
         PostParameters postParemeters, bool trackChanges);
 
     Task<PostDto> GetOnePostByIdAsync(int id, bool trackChanges);
+    Task<PostDto> GetOnePostFromSlug(string slug, bool trackChanges);
     Task<PostDto> CreateOnePostAsync(PostDtoForInsertion post);
     Task UpdateOnePostAsync(int id, PostDtoForUpdate postDto, bool trackChanges);
     Task DeleteOnePostAsync(int id, bool trackChanges);
