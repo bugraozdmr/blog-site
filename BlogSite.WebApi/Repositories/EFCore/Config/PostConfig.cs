@@ -12,17 +12,20 @@ public class PostConfig : IEntityTypeConfiguration<Post>
             new Post
             {
                 Author = "grant", Content = "dkwqdlwqdlqw", secondaryTitle = "what biden did",
-                CreatedAt = DateTime.UtcNow, Id = 1, Slug = "what-biden-did"
+                CreatedAt = DateTime.UtcNow, Id = 1, Slug = "what-biden-did",Title = "sdqdwq",
+                ImageMain = "#",ImageSecondary = "#"
             },
             new Post
             {
                 Author = "grant", Content = "dkwqdlwqdlqw", secondaryTitle = "what biden did",
-                CreatedAt = DateTime.UtcNow, Id = 1, Slug = "what-biden-did"
+                CreatedAt = DateTime.UtcNow, Id = 2, Slug = "what-biden-did",Title = "wrfqwr",
+                ImageMain = "#",ImageSecondary = "#"
             },
             new Post
             {
                 Author = "grant", Content = "dkwqdlwqdlqw", secondaryTitle = "what biden did",
-                CreatedAt = DateTime.UtcNow, Id = 1, Slug = "what-biden-did"
+                CreatedAt = DateTime.UtcNow, Id = 3, Slug = "what-biden-did",Title = "fewfwe",
+                ImageMain = "#",ImageSecondary = "#"
             });
     }
 }

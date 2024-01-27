@@ -49,10 +49,14 @@ public class PostManager : IPostService
 
     public async Task<PostDto> CreateOnePostAsync(PostDtoForInsertion post)
     {
-        var entity = _mapper.Map<Post>(post);
+        post.CreatedAt = DateTime.UtcNow;
+        post.Slug = $"{ReplaceTurkishCharacters(post.Title.Replace(' ', '-').ToLower())}.{GenerateUniqueHash()}";
         
+        var entity = _mapper.Map<Post>(post);
+
         _manager.Post.CreateOnePost(entity);
-        _manager.SaveAsync();
+        await _manager.SaveAsync();
+
 
         return _mapper.Map<PostDto>(entity);
     }
@@ -88,5 +92,28 @@ public class PostManager : IPostService
         }
 
         return entity;
+    }
+    
+    private static string GenerateUniqueHash()
+    {
+        string guid = Guid.NewGuid().ToString("N");
+
+        
+        int length = 6;
+        if (guid.Length < length)
+        {
+            length = guid.Length;
+        }
+
+        string uniqueHash = guid.Substring(0, length);
+
+        return uniqueHash;
+    }
+    
+    private string ReplaceTurkishCharacters(string input)
+    {
+        input = input.Replace("ı", "i").Replace("ğ", "g").Replace("ü", "u").Replace("ş", "s").Replace("ö", "o").Replace("ç", "c");
+        input = input.Replace("İ", "i").Replace("Ğ", "g").Replace("Ü", "u").Replace("Ş", "s").Replace("Ö", "o").Replace("Ç", "c");
+        return input;
     }
 }

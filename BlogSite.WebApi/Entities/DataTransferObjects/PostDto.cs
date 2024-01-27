@@ -7,14 +7,12 @@ public record PostDto
     public string secondaryTitle { get; set; }
     public string Content { get; set; }
     public string Author { get; set; }
+    public string ImageMain { get; set; }
+    public string ImageSecondary { get; set; }
+
     
-    public DateTime CreatedAt { get; set; }
+    public DateTime? CreatedAt { get; set; }
     
     // REPLACE TR KARAKTER YAZ
-    public string Slug => $"{Title.Replace(' ', '-').ToLower()}-{Id}";
-
-    public PostDto()
-    {
-        CreatedAt = DateTime.UtcNow;
-    }
+    public string Slug;
 }

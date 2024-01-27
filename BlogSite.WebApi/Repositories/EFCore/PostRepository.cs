@@ -2,6 +2,7 @@ using DefaultNamespace.Extensions;
 using Entities.Models;
 using Entities.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
+using Repositories.EFCore;
 
 namespace DefaultNamespace;
 

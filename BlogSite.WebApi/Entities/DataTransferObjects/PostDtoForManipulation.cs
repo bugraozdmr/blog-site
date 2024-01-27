@@ -21,4 +21,12 @@ public abstract record PostDtoForManipulation
     
     [Required(ErrorMessage = "Author is required field")]
     public string Author { get; init; }
+    
+    [Required(ErrorMessage = "Image is required field")]
+    public string ImageMain { get; set; }
+    [Required(ErrorMessage = "SecImage is required field")]
+    public string ImageSecondary { get; set; }
+
+    public DateTime? CreatedAt { get; set; }
+    public string? Slug { get; set; }
 }

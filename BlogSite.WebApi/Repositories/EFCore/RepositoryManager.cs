@@ -1,3 +1,5 @@
+using Repositories.EFCore;
+
 namespace DefaultNamespace;
 
 public class RepositoryManager : IRepositoryManager

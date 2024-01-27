@@ -2,7 +2,7 @@ using DefaultNamespace.Config;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DefaultNamespace;
+namespace Repositories.EFCore;
 
 public class RepositoryContext : DbContext
 {
