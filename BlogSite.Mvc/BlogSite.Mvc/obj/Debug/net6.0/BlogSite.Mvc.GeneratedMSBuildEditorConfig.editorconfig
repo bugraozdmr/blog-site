@@ -27,6 +27,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/PostPage/Content.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdFBhZ2UvQ29udGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/PostPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdFBhZ2UvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Components/_CoverPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0NvdmVyUGFydGlhbC9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Components/_FooterPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0Zvb3RlclBhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

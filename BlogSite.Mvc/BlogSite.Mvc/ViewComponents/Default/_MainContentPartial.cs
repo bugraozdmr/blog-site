@@ -17,7 +17,7 @@ public class _MainContentPartial : ViewComponent
     public async Task<IViewComponentResult> InvokeAsync()
     {
         var client = _httpClientFactory.CreateClient();
-        var responseMessage = await client.GetAsync("https://localhost:7052/api/post/getAllPosts");
+        var responseMessage = await client.GetAsync("https://localhost:7052/api/post/getAllPosts?pagesize=9&pagenumber=1");
 
         if (responseMessage.IsSuccessStatusCode)
         {
