@@ -493,3 +493,5 @@ Error Number:515,State:2,Class:16
 2024-01-27 19:58:13.8835 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"DeleteOnePost","Id":"27","CreatedAt":"2024-01-27T16:58:13.883465Z"}
 2024-01-27 19:58:41.4388 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetBooksOptions","Id":null,"CreatedAt":"2024-01-27T16:58:41.438654Z"}
 2024-01-27 20:01:51.1538 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T17:01:51.153801Z"}
+2024-01-27 21:38:31.3901 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T18:38:31.378118Z"}
+2024-01-27 21:47:42.6915 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T18:47:42.681332Z"}

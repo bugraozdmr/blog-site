@@ -15,12 +15,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Default/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Components/_FooterPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0Zvb3RlclBhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Components/_HeadPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0hlYWRQYXJ0aWFsL0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Components/_MainContentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX01haW5Db250ZW50UGFydGlhbC9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Components/_NavBarPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX05hdkJhclBhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Components/_PageHeaderPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX1BhZ2VIZWFkZXJQYXJ0aWFsL0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Components/_ScriptsPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX1NjcmlwdHNQYXJ0aWFsL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Error.cshtml]

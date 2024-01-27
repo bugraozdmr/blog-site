@@ -15,4 +15,3 @@
 /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/obj/Debug/net6.0/refint/Services.dll
 /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/obj/Debug/net6.0/Services.pdb
 /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/obj/Debug/net6.0/ref/Services.dll
-/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/obj/Debug/net6.0/Services.sourcelink.json
