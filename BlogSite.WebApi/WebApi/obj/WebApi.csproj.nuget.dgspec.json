@@ -78,7 +78,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/Services.csproj": {
+                "projectPath": "/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/Services.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

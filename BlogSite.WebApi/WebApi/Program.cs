@@ -31,14 +31,14 @@ builder.Services.AddSwaggerGen();
 
 
 // FilterActions
-//builder.Services.ConfigureActionFilters();
+builder.Services.ConfigureActionFilters();
 
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureLoggerService();
-//builder.Services.ConfigureCors();
-//builder.Services.ConfigureDataShaper();
+builder.Services.ConfigureCors();
+builder.Services.ConfigureDataShaper();
 
 // automapper
 builder.Services.AddAutoMapper(typeof(Program));

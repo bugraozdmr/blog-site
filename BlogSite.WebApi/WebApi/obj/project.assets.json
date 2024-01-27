@@ -1901,7 +1901,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
-          "Newtonsoft.Json": "13.0.3"
+          "Newtonsoft.Json": "13.0.3",
+          "Services": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Presentation.dll": {}
