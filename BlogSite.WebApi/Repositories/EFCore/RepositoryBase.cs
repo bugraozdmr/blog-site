@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using Entities.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DefaultNamespace;
@@ -21,18 +22,9 @@ public abstract class RepositoryBase<T> : IRepositoryBase<T>
             ? _context.Set<T>().Where(expression).Where(expression).AsNoTracking()
             : _context.Set<T>().Where(expression);
 
-    public void Create(T entity)
-    {
-        throw new NotImplementedException();
-    }
+    public void Create(T entity) => _context.Set<T>().Add(entity);
 
-    public void Update(T entity)
-    {
-        throw new NotImplementedException();
-    }
+    public void Update(T entity) => _context.Set<T>().Update(entity);
 
-    public void Delete(T entity)
-    {
-        throw new NotImplementedException();
-    }
+    public void Delete(T entity) => _context.Set<T>().Remove(entity);
 }
