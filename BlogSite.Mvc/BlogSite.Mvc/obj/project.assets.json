@@ -844,6 +844,16 @@
             "rid": "win"
           }
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
       }
     }
   },
@@ -2138,6 +2148,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../../BlogSite.WebApi/Entities/Entities.csproj",
+      "msbuildProject": "../../BlogSite.WebApi/Entities/Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2145,6 +2160,7 @@
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.ExpressionMapping >= 6.0.4",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.1.1",
+      "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.26",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.26",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.26",
@@ -2177,7 +2193,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Entities/Entities.csproj": {
+              "projectPath": "/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Entities/Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

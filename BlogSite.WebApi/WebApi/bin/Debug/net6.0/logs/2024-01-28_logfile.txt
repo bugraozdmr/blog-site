@@ -58,3 +58,463 @@
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
 2024-01-28 00:30:20.3201 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:30:20.319643Z"}
+2024-01-28 00:36:49.7822 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T21:36:49.782157Z"}
+2024-01-28 00:36:54.0896 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:36:54.089581Z"}
+2024-01-28 00:36:54.0976 ERROR Something went wrong : System.InvalidOperationException: Sequence contains more than one element.
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at DefaultNamespace.PostRepository.GetPostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Repositories/EFCore/PostRepository.cs:line 37
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 52
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 00:42:34.6603 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T21:42:34.657737Z"}
+2024-01-28 00:42:37.1651 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:42:37.165062Z"}
+2024-01-28 00:42:37.1724 ERROR Something went wrong : System.InvalidOperationException: Sequence contains more than one element.
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at DefaultNamespace.PostRepository.GetPostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Repositories/EFCore/PostRepository.cs:line 37
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 52
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 00:44:33.9712 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T21:44:33.971053Z"}
+2024-01-28 00:44:35.8047 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:44:35.804703Z"}
+2024-01-28 00:45:06.0559 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:45:06.055709Z"}
+2024-01-28 00:45:06.0697 ERROR Something went wrong : System.InvalidOperationException: Sequence contains more than one element.
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at DefaultNamespace.PostRepository.GetPostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Repositories/EFCore/PostRepository.cs:line 37
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 52
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 00:45:42.0429 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T21:45:42.042936Z"}
+2024-01-28 00:45:42.4221 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T21:45:42.421876Z"}
+2024-01-28 00:45:44.6125 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T21:45:44.612441Z"}
+2024-01-28 00:45:46.4541 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:45:46.454119Z"}
+2024-01-28 00:45:48.5243 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:45:48.524297Z"}
+2024-01-28 00:45:51.1597 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:45:51.159504Z"}
+2024-01-28 00:46:24.1038 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T21:46:24.103582Z"}
+2024-01-28 00:46:25.8844 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:46:25.884418Z"}
+2024-01-28 00:46:47.9055 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:46:47.905449Z"}
+2024-01-28 00:47:15.0399 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T21:47:15.03996Z"}
+2024-01-28 00:47:18.5626 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:47:18.562617Z"}
+2024-01-28 00:48:50.3903 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T21:48:50.39034Z"}
+2024-01-28 00:48:52.7506 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:48:52.750607Z"}
+2024-01-28 00:48:56.5311 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:48:56.531125Z"}
+2024-01-28 00:49:12.3855 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:49:12.385461Z"}
+2024-01-28 00:53:31.0793 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T21:53:31.079088Z"}
+2024-01-28 00:53:33.3482 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T21:53:33.348223Z"}
+2024-01-28 01:01:11.0283 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:01:11.028311Z"}
+2024-01-28 01:01:12.9442 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:01:12.944132Z"}
+2024-01-28 01:09:50.6315 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:09:50.631463Z"}
+2024-01-28 01:09:56.5573 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:09:56.557259Z"}
+2024-01-28 01:11:03.4480 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:11:03.448011Z"}
+2024-01-28 01:11:10.8728 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:11:10.872857Z"}
+2024-01-28 01:11:10.8789 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:11:16.3896 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:11:16.389604Z"}
+2024-01-28 01:11:19.9062 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:11:19.906194Z"}
+2024-01-28 01:11:25.4092 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:11:25.409223Z"}
+2024-01-28 01:11:39.6044 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:11:39.60438Z"}
+2024-01-28 01:12:23.0401 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:12:23.040122Z"}
+2024-01-28 01:12:27.4689 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:12:27.46892Z"}
+2024-01-28 01:12:27.4751 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:12:29.2080 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:12:29.207982Z"}
+2024-01-28 01:12:31.6583 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:12:31.65833Z"}
+2024-01-28 01:12:31.6692 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:14:38.7833 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"DeleteOnePost","Id":"1","CreatedAt":"2024-01-27T22:14:38.783282Z"}
+2024-01-28 01:14:41.1539 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"DeleteOnePost","Id":"2","CreatedAt":"2024-01-27T22:14:41.153903Z"}
+2024-01-28 01:14:45.2828 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"DeleteOnePost","Id":"3","CreatedAt":"2024-01-27T22:14:45.282806Z"}
+2024-01-28 01:14:48.9534 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"DeleteOnePost","Id":"26","CreatedAt":"2024-01-27T22:14:48.953387Z"}
+2024-01-28 01:14:51.8879 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"DeleteOnePost","Id":"28","CreatedAt":"2024-01-27T22:14:51.887894Z"}
+2024-01-28 01:14:56.1120 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"DeleteOnePost","Id":"1017","CreatedAt":"2024-01-27T22:14:56.111867Z"}
+2024-01-28 01:14:58.7811 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"DeleteOnePost","Id":"1016","CreatedAt":"2024-01-27T22:14:58.781161Z"}
+2024-01-28 01:15:01.3214 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"DeleteOnePost","Id":"30","CreatedAt":"2024-01-27T22:15:01.321425Z"}
+2024-01-28 01:15:04.7955 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"DeleteOnePost","Id":"29","CreatedAt":"2024-01-27T22:15:04.795337Z"}
+2024-01-28 01:15:07.7756 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"DeleteOnePost","Id":"28","CreatedAt":"2024-01-27T22:15:07.775564Z"}
+2024-01-28 01:15:07.7869 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 28 could not found
+   at Services.PostManager.GetOneBookAndCheckExists(Int32 id, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 103
+   at Services.PostManager.DeleteOnePostAsync(Int32 id, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 89
+   at Presentation.Controllers.PostController.DeleteOnePost(Int32 id) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:15:15.3093 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:15:15.309191Z"}
+2024-01-28 01:15:15.3187 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:15:20.0938 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:15:20.093791Z"}
+2024-01-28 01:17:19.8363 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:17:19.83622Z"}
+2024-01-28 01:17:55.9709 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:17:55.970937Z"}
+2024-01-28 01:19:59.0089 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:19:59.008841Z"}
+2024-01-28 01:21:46.0878 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:21:46.087871Z"}
+2024-01-28 01:22:49.5787 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:22:49.578767Z"}
+2024-01-28 01:22:51.2267 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:22:51.226758Z"}
+2024-01-28 01:22:51.2334 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:23:02.0575 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:23:02.057445Z"}
+2024-01-28 01:23:02.0700 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:24:02.7963 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:24:02.796312Z"}
+2024-01-28 01:24:07.6041 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:24:07.604087Z"}
+2024-01-28 01:24:07.6100 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:25:06.7148 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:25:06.71484Z"}
+2024-01-28 01:26:08.6989 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:26:08.698926Z"}
+2024-01-28 01:26:08.7050 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:26:21.1568 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:26:21.156759Z"}
+2024-01-28 01:26:21.1676 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:26:29.4524 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:26:29.452229Z"}
+2024-01-28 01:26:35.2277 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:26:35.227704Z"}
+2024-01-28 01:26:35.2378 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:26:43.2161 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:26:43.216064Z"}
+2024-01-28 01:26:43.2270 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:26:48.2124 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:26:48.212252Z"}
+2024-01-28 01:26:48.2246 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:28:52.7671 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:28:52.767147Z"}
+2024-01-28 01:28:56.1282 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:28:56.128263Z"}
+2024-01-28 01:28:56.1325 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:28:56.2261 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:28:56.226182Z"}
+2024-01-28 01:28:56.2298 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:36:58.1014 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:36:58.101351Z"}
+2024-01-28 01:37:38.6148 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"CreateOneBook","Id":null,"CreatedAt":"2024-01-27T22:37:38.603852Z"}
+2024-01-28 01:37:51.4830 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:37:51.482924Z"}
+2024-01-28 01:37:55.9369 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:37:55.936759Z"}
+2024-01-28 01:39:13.8256 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:39:13.825488Z"}
+2024-01-28 01:39:17.5026 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:39:17.502297Z"}
+2024-01-28 01:39:17.5490 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:41:55.6173 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:41:55.61734Z"}
+2024-01-28 01:41:58.5794 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:41:58.579312Z"}
+2024-01-28 01:43:20.0758 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:43:20.075456Z"}
+2024-01-28 01:43:22.9817 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:43:22.98171Z"}
+2024-01-28 01:43:57.5120 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:43:57.511956Z"}
+2024-01-28 01:43:59.4016 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:43:59.401438Z"}
+2024-01-28 01:44:18.3458 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:44:18.345835Z"}
+2024-01-28 01:44:19.8813 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:44:19.8813Z"}
+2024-01-28 01:44:39.4256 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:44:39.425628Z"}
+2024-01-28 01:44:42.5078 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:44:42.507792Z"}
+2024-01-28 01:44:54.6746 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:44:54.674538Z"}
+2024-01-28 01:44:54.6858 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 01:45:34.1365 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:45:34.136511Z"}
+2024-01-28 01:45:37.3372 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:45:37.337192Z"}
+2024-01-28 01:45:43.1804 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:45:43.180419Z"}
+2024-01-28 01:45:46.8348 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:45:46.834713Z"}
+2024-01-28 01:46:04.5277 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:46:04.527681Z"}
+2024-01-28 01:46:06.4509 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:46:06.450939Z"}
+2024-01-28 01:46:07.1523 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:46:07.152237Z"}
+2024-01-28 01:46:07.2969 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:46:07.296877Z"}
+2024-01-28 01:46:07.4470 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:46:07.44703Z"}
+2024-01-28 01:46:07.6019 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:46:07.601918Z"}
+2024-01-28 01:46:07.7878 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:46:07.787805Z"}
+2024-01-28 01:46:07.9617 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:46:07.961703Z"}
+2024-01-28 01:46:09.1541 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:46:09.154065Z"}
+2024-01-28 01:46:10.2653 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:46:10.26522Z"}
+2024-01-28 01:51:02.8966 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"CreateOneBook","Id":null,"CreatedAt":"2024-01-27T22:51:02.896606Z"}
+2024-01-28 01:51:27.2521 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:51:27.252142Z"}
+2024-01-28 01:51:31.1808 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:51:31.180793Z"}
+2024-01-28 01:55:24.4097 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:55:24.409585Z"}
+2024-01-28 01:55:37.1351 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:55:37.134918Z"}
+2024-01-28 01:56:17.1190 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:56:17.119023Z"}
+2024-01-28 01:56:54.7343 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:56:54.734274Z"}
+2024-01-28 01:57:28.3264 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:57:28.326461Z"}
+2024-01-28 01:57:29.8328 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:57:29.832848Z"}
+2024-01-28 01:57:30.7621 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:57:30.762068Z"}

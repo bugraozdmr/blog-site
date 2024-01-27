@@ -67,3 +67,5 @@
 /Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/obj/Debug/net6.0/ref/BlogSite.Mvc.dll
 /Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/bin/Debug/net6.0/Entities.dll
+/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/bin/Debug/net6.0/Entities.pdb

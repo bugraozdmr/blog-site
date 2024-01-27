@@ -29,4 +29,8 @@
       <Folder Include="wwwroot\siteTemplate\js\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\BlogSite.WebApi\Entities\Entities.csproj" />
+    </ItemGroup>
+
 </Project>

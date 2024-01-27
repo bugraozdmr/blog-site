@@ -10,6 +10,10 @@ public class MainDto
     
     public DateTime? CreatedAt { get; set; }
 
-    // REPLACE TR KARAKTER YAZ
     public string? Slug { get; set; }
+    
+    public string ImageMain { get; set; }
+    public string ImageSecondary { get; set; }
+    
+    public string Content { get; set; }
 }

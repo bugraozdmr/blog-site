@@ -8,17 +8,16 @@
 <html lang="en">
     
     @await Component.InvokeAsync("_HeadPartial")
-
 <body>
-        <!-- Navigation-->
-        @await Component.InvokeAsync("_NavBarPartial")
-        <!-- Page Header-->
-        @await Component.InvokeAsync("_CoverPartial",Model)
-        <!-- post Content-->
-        @await Html.PartialAsync("Content",Model);
-        <!-- Footer-->
-        @await Component.InvokeAsync("_FooterPartial")
-        <!-- Js -->
-        @await Component.InvokeAsync("_ScriptsPartial")
+    <!-- Navigation-->
+    @await Component.InvokeAsync("_NavBarPartial")
+    <!-- Page Header-->
+    @await Component.InvokeAsync("_CoverPartial", Model)
+    <!-- post Content-->
+    @await Html.PartialAsync("Content", Model);
+    <!-- Footer-->
+    @await Component.InvokeAsync("_FooterPartial")
+    <!-- Js -->
+    @await Component.InvokeAsync("_ScriptsPartial")
     </body>
 </html>
