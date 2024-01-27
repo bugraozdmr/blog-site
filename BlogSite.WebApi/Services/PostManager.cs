@@ -2,6 +2,7 @@ using System.Dynamic;
 using AutoMapper;
 using DefaultNamespace;
 using Entities.DataTransferObjects;
+using Entities.Exceptions;
 using Entities.MetaData;
 using Entities.Models;
 using Entities.RequestFeatures;
@@ -27,6 +28,8 @@ public class PostManager : IPostService
 
     public async Task<(IEnumerable<ExpandoObject> posts, MetaData metadata)> GetAllPostsAsync(PostParameters postParemeters, bool trackChanges)
     {
+        // buraya bir filter gömülecek -- exception tanımlanıp
+        
         var booksWithMetaData = await _manager
             .Post
             .GetAllPostsAsync(postParemeters, trackChanges);
@@ -77,11 +80,11 @@ public class PostManager : IPostService
     
     private async Task<Post> GetOneBookAndCheckExists(int id,bool trackChanges) {
         // check entity
-        var entity = await _manager.Post.GetOneBookByidAsync(id, trackChanges);
+        var entity = await _manager.Post.GetOnePostByidAsync(id, trackChanges);
 
         if (entity is null)
         {
-            throw new BookNotFoundException(id);
+            throw new PostNotFoundException(id);
         }
 
         return entity;

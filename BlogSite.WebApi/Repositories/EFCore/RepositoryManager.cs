@@ -1,6 +1,6 @@
 namespace DefaultNamespace;
 
-public class RepositoryManager
+public class RepositoryManager : IRepositoryManager
 {
     private readonly RepositoryContext _context;
     private readonly Lazy<IPostRepository> _postRepository;
