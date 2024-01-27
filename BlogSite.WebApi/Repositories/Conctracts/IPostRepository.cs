@@ -5,11 +5,11 @@ namespace DefaultNamespace;
 
 public interface IPostRepository
 {
-    Task<PagedList<Post>> GetAllBooksAsync(PostParameters postParameters,
+    Task<PagedList<Post>> GetAllPostsAsync(PostParameters postParameters,
         bool trackChanges);
 
-    Task<Post> GetOneBookByidAsync(int id, bool trackChanges);
-    void CreateOneBook(Post post);
-    void UpdateOneBook(Post post);
-    void DeleteOneBook(Post post);
+    Task<Post> GetOnePostByidAsync(int id, bool trackChanges);
+    void CreateOnePost(Post post);
+    void UpdateOnePost(Post post);
+    void DeleteOnePost(Post post);
 }

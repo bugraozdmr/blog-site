@@ -1876,9 +1876,11 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.1",
+          "Entities": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "Microsoft.Extensions.Logging": "6.0.2-mauipre.1.22102.15",
-          "NLog": "5.2.8"
+          "NLog": "5.2.8",
+          "Repositories": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Services.dll": {}

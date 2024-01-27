@@ -220,7 +220,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Entities/Entities.csproj": {
+                "projectPath": "/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Entities/Entities.csproj"
+              },
+              "/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Repositories/Repositories.csproj": {
+                "projectPath": "/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Repositories/Repositories.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

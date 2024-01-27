@@ -13,7 +13,7 @@ public sealed class PostRepository : RepositoryBase<Post> , IPostRepository
     }
 
 
-    public async Task<PagedList<Post>> GetAllBooksAsync(PostParameters postParameters, bool trackChanges)
+    public async Task<PagedList<Post>> GetAllPostsAsync(PostParameters postParameters, bool trackChanges)
     {
         
         // sonra filter eklenecek
@@ -28,13 +28,13 @@ public sealed class PostRepository : RepositoryBase<Post> , IPostRepository
                 postParameters.PageSize);
     }
 
-    public async Task<Post> GetOneBookByidAsync(int id, bool trackChanges) => 
+    public async Task<Post> GetOnePostByidAsync(int id, bool trackChanges) => 
         await FindByCondition(b => b.Id.Equals(id), trackChanges)
             .SingleOrDefaultAsync();
 
-    public void CreateOneBook(Post post) => Create(post);
+    public void CreateOnePost(Post post) => Create(post);
 
-    public void UpdateOneBook(Post post) => Update(post);
+    public void UpdateOnePost(Post post) => Update(post);
 
-    public void DeleteOneBook(Post post) => Delete(post);
+    public void DeleteOnePost(Post post) => Delete(post);
 }
