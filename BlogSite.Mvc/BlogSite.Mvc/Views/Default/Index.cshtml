@@ -1,3 +1,5 @@
+@model FromRouteDto
+
 @{
     Layout = null;
 }
@@ -13,7 +15,7 @@
         <!-- Page Header-->
         @await Component.InvokeAsync("_PageHeaderPartial")
         <!-- Main Content-->
-        @await Component.InvokeAsync("_MainContentPartial")
+        @await Component.InvokeAsync("_MainContentPartial",Model)
         <!-- Footer-->
         @await Component.InvokeAsync("_FooterPartial")
         <!-- Js -->

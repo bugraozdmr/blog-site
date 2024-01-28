@@ -518,3 +518,93 @@
 2024-01-28 01:57:28.3264 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:57:28.326461Z"}
 2024-01-28 01:57:29.8328 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:57:29.832848Z"}
 2024-01-28 01:57:30.7621 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-27T22:57:30.762068Z"}
+2024-01-28 01:58:19.5963 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-27T22:58:19.596198Z"}
+2024-01-28 11:54:07.5632 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T08:54:07.551492Z"}
+2024-01-28 11:54:21.9254 ERROR Something went wrong : System.Net.Sockets.SocketException (22): Invalid argument
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.set_ReceiveTimeout(Int32 value)
+   at Microsoft.Data.SqlClient.SNI.SNITCPHandle.Receive(SNIPacket& packet, Int32 timeoutInMilliseconds)
+   at Microsoft.Data.SqlClient.SNI.SNIProxy.ReadSyncOverAsync(SNIHandle handle, SNIPacket& packet, Int32 timeout)
+   at Microsoft.Data.SqlClient.SNI.TdsParserStateObjectManaged.ReadSyncOverAsync(Int32 timeoutRemaining, UInt32& error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at DefaultNamespace.PostRepository.GetAllPostsAsync(PostParameters postParameters, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Repositories/EFCore/PostRepository.cs:line 21
+   at Services.PostManager.GetAllPostsAsync(PostParameters postParemeters, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 33
+   at Presentation.Controllers.PostController.GetAllPostsAsync(PostParameters postParameters) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 11:54:39.2242 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T08:54:39.224033Z"}
+2024-01-28 11:54:42.6714 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T08:54:42.671286Z"}
+2024-01-28 11:54:44.1993 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T08:54:44.199055Z"}
+2024-01-28 11:57:51.3280 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T08:57:51.327977Z"}
+2024-01-28 11:58:08.3286 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T08:58:08.328539Z"}
+2024-01-28 11:59:31.0371 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T08:59:31.037113Z"}
+2024-01-28 11:59:32.3431 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T08:59:32.342751Z"}
+2024-01-28 11:59:34.5214 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T08:59:34.5213Z"}
+2024-01-28 11:59:50.4191 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T08:59:50.419043Z"}
+2024-01-28 12:00:03.4414 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:00:03.441397Z"}
+2024-01-28 12:02:03.8474 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:02:03.847429Z"}
+2024-01-28 12:02:17.1703 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:02:17.170058Z"}
+2024-01-28 12:02:39.3040 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:02:39.304035Z"}
+2024-01-28 12:02:41.3840 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:02:41.383987Z"}
+2024-01-28 12:02:50.6211 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:02:50.62094Z"}
+2024-01-28 12:02:54.3957 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:02:54.395704Z"}
+2024-01-28 12:02:55.2833 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:02:55.283293Z"}
+2024-01-28 12:02:56.4163 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:02:56.416251Z"}
+2024-01-28 12:12:45.1970 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T09:12:45.197031Z"}
+2024-01-28 12:12:45.2212 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 57
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 12:16:22.9234 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:16:22.923328Z"}
+2024-01-28 12:18:59.1143 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:18:59.114348Z"}
+2024-01-28 12:19:04.3478 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:19:04.347788Z"}
+2024-01-28 12:19:08.7667 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:19:08.766487Z"}
+2024-01-28 12:19:18.5302 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T09:19:18.530187Z"}
