@@ -61,8 +61,8 @@ public class PostManager : IPostService
     
     public async Task<PostDto> CreateOnePostAsync(PostDtoForInsertion post)
     {
-        post.CreatedAt = DateTime.UtcNow;
-        post.Slug = $"{ReplaceTurkishCharacters(post.Title.Replace(' ', '-').ToLower())}.{GenerateUniqueHash()}";
+        post.CreatedAt = DateTime.Now;
+        post.Slug = $"{RemoveNonAlphanumericAndSpecialChars(ReplaceTurkishCharacters(post.Title.Replace(' ', '-').ToLower()))}.{GenerateUniqueHash()}";
         
         var entity = _mapper.Map<Post>(post);
 
@@ -129,4 +129,19 @@ public class PostManager : IPostService
         input = input.Replace("İ", "i").Replace("Ğ", "g").Replace("Ü", "u").Replace("Ş", "s").Replace("Ö", "o").Replace("Ç", "c");
         return input;
     }
+    
+    private string RemoveNonAlphanumericAndSpecialChars(string input)
+    {
+        // LINQ kullanarak boşluk, tire ve nokta karakterlerini filtrele
+        var filteredCharacters = input
+            .Where(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c) || c == '-')
+            .ToArray();
+
+        // Filtrelenmiş karakterleri yeni bir string olarak oluştur
+        string result = new string(filteredCharacters);
+
+        return result;
+    }
+
+
 }

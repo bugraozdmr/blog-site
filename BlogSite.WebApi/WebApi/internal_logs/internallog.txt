@@ -290,3 +290,21 @@
 2024-01-28 19:13:19.7800 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
 2024-01-28 19:13:19.8045 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/WebApi/nlog.config
 2024-01-28 19:13:19.8128 Info Configuration initialized.
+2024-01-28 19:58:59.4952 Info AppDomain Shutting down. LogFactory closing...
+2024-01-28 19:58:59.5042 Info LogFactory has been closed.
+2024-01-28 19:59:01.8686 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-01-28 19:59:01.8846 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-01-28 19:59:01.9087 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/WebApi/nlog.config
+2024-01-28 19:59:01.9156 Info Configuration initialized.
+2024-01-28 20:06:58.6352 Info AppDomain Shutting down. LogFactory closing...
+2024-01-28 20:06:58.6433 Info LogFactory has been closed.
+2024-01-28 20:07:00.1066 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-01-28 20:07:00.1221 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-01-28 20:07:00.1446 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/WebApi/nlog.config
+2024-01-28 20:07:00.1503 Info Configuration initialized.
+2024-01-28 20:07:54.1622 Info AppDomain Shutting down. LogFactory closing...
+2024-01-28 20:07:54.1691 Info LogFactory has been closed.
+2024-01-28 20:07:55.8692 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-01-28 20:07:55.8855 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-01-28 20:07:55.9105 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=/Users/bugra/Desktop/BlogSite/BlogSite.WebApi/WebApi/nlog.config
+2024-01-28 20:07:55.9170 Info Configuration initialized.
