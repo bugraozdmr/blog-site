@@ -1,4 +1,5 @@
 using Entities.DataTransferObjects;
+using Entities.Exceptions;
 using Entities.RequestFeatures;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -74,6 +75,14 @@ public class PostController : ControllerBase
     [HttpPut("{id:int}")]
     public async Task<IActionResult> UpdateOnePostAsync([FromRoute(Name = "id")] int id, [FromBody] PostDtoForUpdate postDto)
     {
+        // geçici bir çözüm -- manager control yapıyor
+
+        var post = await _manager.PostService.GetOnePostByIdAsync(id, false);
+
+        postDto.Slug = post.Slug;
+        postDto.CreatedAt = post.CreatedAt;
+        
+        
         await _manager.PostService.UpdateOnePostAsync(id, postDto, false);
         
         return Ok(new { data = postDto });

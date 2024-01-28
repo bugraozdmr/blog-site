@@ -9,5 +9,6 @@ public class AutoMapperConfig : Profile
     public AutoMapperConfig()
     {
         CreateMap<MainDto, Post>().ReverseMap();
+        CreateMap<UpdatePostDto, MainDto>().ReverseMap();
     }
 }

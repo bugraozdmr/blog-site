@@ -35,4 +35,8 @@
       <ProjectReference Include="..\..\BlogSite.WebApi\Entities\Entities.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\UpdatePanel\Index.cshtml" />
+    </ItemGroup>
+
 </Project>

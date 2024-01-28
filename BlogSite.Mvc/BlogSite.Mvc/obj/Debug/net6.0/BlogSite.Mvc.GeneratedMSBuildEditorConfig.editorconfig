@@ -19,6 +19,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYWdlL0FsbFBvc3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/AdminPage/createpost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYWdlL2NyZWF0ZXBvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/AdminPage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYWdlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -89,10 +93,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/UpdatePanel/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXBkYXRlUGFuZWwvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/_ViewImports.cshtml]

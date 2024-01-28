@@ -1,4 +1,4 @@
-@model MainDto
+@model CreatePostDto
 
 
 
@@ -18,45 +18,42 @@
 <div class="container mt-3 mx-auto">
     <main role="main" class="pb-6 mx-auto" style="padding-top: 40px">
         <form method="post">
-            <input type="hidden" asp-for="Id"/>
-
             <div class="form-group my-3">
                 <label style="color: #ffffff" class="h5">Yazar</label>
-                <input type="text" asp-for="Author" class="form-control form-control-lg" placeholder="Author" value="@Model.Author"/>
+                <input type="text" asp-for="Author" class="form-control form-control-lg" placeholder="Author"/>
             </div>
             
             
             <div class="form-group my-3">
                 <label style="color: #ffffff" class="h5">Başlık</label>
-                <input type="text" asp-for="Title" class="form-control form-control-lg" placeholder="Main Title" value="@Model.Title"/>
+                <input type="text" asp-for="Title" class="form-control form-control-lg" placeholder="Main Title"/>
             </div>
 
             <div class="form-group my-3">
                 <label style="color: #ffffff" class="h5">Ikincil Başlık</label>
-                <input type="text" asp-for="secondaryTitle" class="form-control form-control-lg" placeholder="Title" value="@Model.secondaryTitle"/>
+                <input type="text" asp-for="secondaryTitle" class="form-control form-control-lg" placeholder="Title"/>
             </div>
 
             <div class="form-group my-3">
                 <label style="color: #ffffff" class="h5">Içerik</label>
-                <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="6" asp-for="Content" placeholder="Description">@Model.Content</textarea>
+                <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="6" asp-for="Content" placeholder="Description"></textarea>
             </div>
 
             <div class="form-group my-3">
                 <label style="color: #ffffff" class="h5">Ana Resim Url</label>
-                <input type="text" asp-for="ImageMain" class="form-control form-control-lg" placeholder="Description" value="@Model.ImageMain"/>
+                <input type="text" asp-for="ImageMain" class="form-control form-control-lg" placeholder="Description"/>
             </div>
 
             <div class="form-group my-3">
                 <label style="color: #ffffff" class="h5">Yardımcı Resim Url</label>
-                <input type="text" asp-for="ImageSecondary" class="form-control form-control-lg" placeholder="Description" value="@Model.ImageSecondary"/>
+                <input type="text" asp-for="ImageSecondary" class="form-control form-control-lg" placeholder="Description"/>
             </div>
 
             
             
             <div class="form-group my-3 text-right d-flex justify-content-between">
-                <a href="https://localhost:7264/adminpage/" class="btn btn-outline-secondary btn-lg text-left">Geri Dön</a>
-                <a href="https://localhost:7264/adminpage/deletepost/@Model.Id" class="btn btn-outline-danger btn-lg mx-2">Sil</a>
-                <button class="btn btn-outline-primary btn-lg">Düzenle</button>
+                <a href="https://localhost:7264/adminpage" class="btn btn-outline-secondary btn-lg">Geri Dön</a>
+                <button class="btn btn-outline-primary btn-lg">Kaydet</button>
             </div>
 
 

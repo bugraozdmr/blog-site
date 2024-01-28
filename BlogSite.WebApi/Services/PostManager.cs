@@ -79,6 +79,7 @@ public class PostManager : IPostService
 
         entity = _mapper.Map<Post>(postDto);
         
+        
         _manager.Post.UpdateOnePost(entity);
 
         await _manager.SaveAsync();
