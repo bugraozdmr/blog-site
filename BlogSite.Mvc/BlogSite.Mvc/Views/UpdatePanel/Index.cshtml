@@ -1,0 +1,44 @@
+@model MainDto
+
+
+
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    @await Component.InvokeAsync("_AdminHeadPartial")
+</head>
+
+<body>
+    
+    <form method="post">
+    	<input type="hidden" asp-for="Id" value="@Model.Id"/>
+    	<label>Başlık</label>
+    	<input type="text" asp-for="Title" class="form-control" placeholder="ServiceIcon" value="@Model.Title"/>
+    	<br/>
+    	<label>Ikincil Başlık</label>
+    	<input type="text" asp-for="Title" class="form-control" placeholder="Title" value="@Model.secondaryTitle"/>
+    	<br/>
+    	<label>Içerik</label>
+    	<input type="text" asp-for="Content" class="form-control" placeholder="Description" value="@Model.Content"/>
+    	<br/>
+	    <label>Ana Resim Url</label>
+        <input type="text" asp-for="Content" class="form-control" placeholder="Description" value="@Model.ImageMain"/>
+        <br/>
+        <label>Yardımcı Resim Url</label>
+        <input type="text" asp-for="Content" class="form-control" placeholder="Description" value="@Model.ImageSecondary"/>
+        <br/>
+
+	    <button class="btn btn-primary">modify service</button>
+    </form>
+    
+
+
+
+@await Component.InvokeAsync("_AdminPageScripts")
+
+</body>
+</html>

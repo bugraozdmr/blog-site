@@ -5,6 +5,9 @@ namespace BlogSite.Mvc.Controllers;
 
 public class DefaultController : Controller
 {
+    [HttpGet("default/index")]
+    [HttpGet("default")]
+    [HttpGet("")]
     public IActionResult Index(int pagesize,int pagenumber)
     {
         FromRouteDto dto = new FromRouteDto()

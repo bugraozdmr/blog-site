@@ -1,3 +1,5 @@
+@model List<MainDto>
+
 @{
 	Layout = null;
 }
@@ -8,7 +10,7 @@
 	@await Component.InvokeAsync("_AdminHeadPartial")
 </head>
 	<body>
-	@await Html.PartialAsync("AllPosts")
+	@await Html.PartialAsync("AllPosts",Model)
 
 	@await Component.InvokeAsync("_AdminPageScripts")
 

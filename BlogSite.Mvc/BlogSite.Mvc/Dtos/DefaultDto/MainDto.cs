@@ -2,7 +2,7 @@ namespace BlogSite.Mvc.Dtos.DefaultDto;
 
 public class MainDto
 {
-    
+    public int Id { get; set; }
     public string Title { get; set; }
     public string secondaryTitle { get; set; }
     

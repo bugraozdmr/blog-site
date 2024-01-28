@@ -1,0 +1,66 @@
+@model MainDto
+
+
+
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    @await Component.InvokeAsync("_AdminHeadPartial")
+</head>
+
+<body>
+    
+
+<div class="container mt-3 mx-auto">
+    <main role="main" class="pb-6 mx-auto" style="padding-top: 40px">
+        <form method="post">
+            <input type="hidden" asp-for="Id" value="@Model.Id"/>
+
+            <div class="form-group my-3">
+                <label style="color: #ffffff" class="h5">Başlık</label>
+                <input type="text" asp-for="Title" class="form-control form-control-lg" placeholder="ServiceIcon" value="@Model.Title"/>
+            </div>
+
+            <div class="form-group my-3">
+                <label style="color: #ffffff" class="h5">Ikincil Başlık</label>
+                <input type="text" asp-for="Title" class="form-control form-control-lg" placeholder="Title" value="@Model.secondaryTitle"/>
+            </div>
+
+            <div class="form-group my-3">
+                <label style="color: #ffffff" class="h5">Içerik</label>
+                <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" asp-for="Content" placeholder="Description">@Model.Content</textarea>
+            </div>
+
+            <div class="form-group my-3">
+                <label style="color: #ffffff" class="h5">Ana Resim Url</label>
+                <input type="text" asp-for="ImageMain" class="form-control form-control-lg" placeholder="Description" value="@Model.ImageMain"/>
+            </div>
+
+            <div class="form-group my-3">
+                <label style="color: #ffffff" class="h5">Yardımcı Resim Url</label>
+                <input type="text" asp-for="ImageSecondary" class="form-control form-control-lg" placeholder="Description" value="@Model.ImageSecondary"/>
+            </div>
+
+            <div class="form-group my-3 text-right">
+                <button type="button" class="btn btn-outline-primary btn-lg">Düzenle</button>
+            </div>
+
+        </form>
+    </main>
+</div>
+
+
+
+
+
+
+
+
+@await Component.InvokeAsync("_AdminPageScripts")
+
+</body>
+</html>
