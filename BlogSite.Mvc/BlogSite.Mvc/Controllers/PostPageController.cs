@@ -5,11 +5,11 @@ using Newtonsoft.Json;
 
 namespace BlogSite.Mvc.Controllers;
 
-public class PostPage : Controller
+public class PostPageController : Controller
 {
     private readonly IHttpClientFactory _httpClientFactory;
 
-    public PostPage(IHttpClientFactory client)
+    public PostPageController(IHttpClientFactory client)
     {
         _httpClientFactory = client;
     }

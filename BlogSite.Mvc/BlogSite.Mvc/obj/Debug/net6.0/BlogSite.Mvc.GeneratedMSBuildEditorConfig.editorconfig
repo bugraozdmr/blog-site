@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/AdminPage/AllPosts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYWdlL0FsbFBvc3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/AdminPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYWdlL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Default/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -33,6 +41,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/PostPage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdFBhZ2UvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Components/_AdminHeadPartial/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0FkbWluSGVhZFBhcnRpYWwvZGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Components/_AdminPageScripts/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0FkbWluUGFnZVNjcmlwdHMvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/bugra/Desktop/BlogSite/BlogSite.Mvc/BlogSite.Mvc/Views/Shared/Components/_CoverPartial/Default.cshtml]

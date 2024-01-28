@@ -1,0 +1,17 @@
+@{
+	Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+	@await Component.InvokeAsync("_AdminHeadPartial")
+</head>
+	<body>
+	@await Html.PartialAsync("AllPosts")
+
+	@await Component.InvokeAsync("_AdminPageScripts")
+
+	</body>
+</html>
+
