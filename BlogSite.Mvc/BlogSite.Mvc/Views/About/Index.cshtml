@@ -1,0 +1,48 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    
+@await Component.InvokeAsync("_HeadPartial")
+
+<body>
+<!-- Navigation-->
+@await Component.InvokeAsync("_NavBarPartial")
+<!-- Page Header-->
+@await Html.PartialAsync("PageHeader")
+<!-- Main Content-->
+<main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>
+                            Merhaba, ben Buğra. Bu platformu oluşturan ve yöneten isim olarak, size sitem hakkında biraz bilgi vermek istiyorum.
+                            <br>
+                            <br>
+                            <h4>Vizyonumuz :</h4> Sitemizin temel amacı,  kullanıcılarına bilgi sunmak, eğlence sağlamak  üzerinden ilham alarak, onlara değer katmaktır.
+                            <br>
+                            <br>
+                            <h4>Misyonumuz :</h4>  Okuyucularımıza güvenilir bilgi sağlamak, eğlenceli bir ortam yaratmak .
+                            <br>
+                            <br>
+                            <h4>Deneyim :</h4> 1.5 aylık .net ASP Core bilgim ile oluşturuldu.
+                            <br>
+                            <br>
+                            <h4>Sizlerle Etkileşim :</h4> Sitemizdeki içeriklerle ilgili geri bildirimlerinizi bekliyoruz. Sizinle etkileşimde bulunmak, sitemizi sürekli olarak geliştirmemize olanak tanır.
+                            <br>
+                            <br>
+                            <h4>Teşekkür :</h4> Sitemizi ziyaret ettiğiniz ve bizimle birlikte olduğunuz için teşekkür ederiz. <strong>Temiz Haber</strong>, sizinle birlikte büyüyor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+<!-- Footer-->
+@await Component.InvokeAsync("_FooterPartial")
+<!-- Js -->
+@await Component.InvokeAsync("_ScriptsPartial")
+</body>
+</html>

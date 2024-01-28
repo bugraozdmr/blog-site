@@ -34,6 +34,16 @@ public class PostController : ControllerBase
             postParameters.PageNumber = 1;
         }
 
+        if (postParameters.PageNumber != 0 && postParameters.PageSize == 0)
+        {
+            postParameters.PageSize = 5;
+        }
+
+        if (postParameters.PageNumber == 0 && postParameters.PageSize != 0)
+        {
+            postParameters.PageNumber = 1;
+        }
+        
         var pagedResult = await _manager
             .PostService
             .GetAllPostsAsync(postParameters, false);

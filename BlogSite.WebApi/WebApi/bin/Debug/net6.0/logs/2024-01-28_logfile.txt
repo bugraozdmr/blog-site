@@ -1739,3 +1739,134 @@
 2024-01-28 20:12:49.6736 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T17:12:49.673601Z"}
 2024-01-28 20:12:52.4259 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T17:12:52.425855Z"}
 2024-01-28 20:12:55.8470 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T17:12:55.847024Z"}
+2024-01-28 20:14:14.8830 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:14:14.882946Z"}
+2024-01-28 20:14:25.3492 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:14:25.349254Z"}
+2024-01-28 20:16:45.8190 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:16:45.818971Z"}
+2024-01-28 20:17:21.1227 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T17:17:21.122694Z"}
+2024-01-28 20:17:33.7641 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T17:17:33.764072Z"}
+2024-01-28 20:17:37.3657 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T17:17:37.365646Z"}
+2024-01-28 20:17:47.5851 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T17:17:47.585078Z"}
+2024-01-28 20:17:51.9526 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T17:17:51.952515Z"}
+2024-01-28 20:18:11.8725 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:18:11.872452Z"}
+2024-01-28 20:18:22.0692 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:18:22.069193Z"}
+2024-01-28 20:18:25.8800 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T17:18:25.87996Z"}
+2024-01-28 20:18:37.9241 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:18:37.924014Z"}
+2024-01-28 20:18:52.9951 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetOnePost","Id":"1018","CreatedAt":"2024-01-28T17:18:52.995083Z"}
+2024-01-28 20:19:01.2057 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetOnePost","Id":"1019","CreatedAt":"2024-01-28T17:19:01.205681Z"}
+2024-01-28 20:19:04.5651 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:19:04.56511Z"}
+2024-01-28 20:19:18.6909 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:19:18.690915Z"}
+2024-01-28 20:26:51.2009 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:26:51.191296Z"}
+2024-01-28 20:27:02.6813 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:27:02.681258Z"}
+2024-01-28 20:30:04.5528 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:30:04.552779Z"}
+2024-01-28 20:30:10.6348 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:30:10.634774Z"}
+2024-01-28 20:30:47.6333 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:30:47.633345Z"}
+2024-01-28 20:30:49.4844 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:30:49.484369Z"}
+2024-01-28 20:31:02.2179 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:31:02.217926Z"}
+2024-01-28 20:31:05.3920 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:31:05.391912Z"}
+2024-01-28 20:31:50.6570 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:31:50.656938Z"}
+2024-01-28 20:31:52.3469 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:31:52.346874Z"}
+2024-01-28 20:37:58.7064 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:37:58.706378Z"}
+2024-01-28 20:43:07.8606 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:07.860605Z"}
+2024-01-28 20:43:11.6421 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:11.642115Z"}
+2024-01-28 20:43:14.6871 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:14.687114Z"}
+2024-01-28 20:43:19.6022 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:19.60216Z"}
+2024-01-28 20:43:23.8822 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:23.882196Z"}
+2024-01-28 20:43:25.4073 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:25.407339Z"}
+2024-01-28 20:43:26.9426 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:26.942509Z"}
+2024-01-28 20:43:28.6330 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:28.633012Z"}
+2024-01-28 20:43:30.6892 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:30.689216Z"}
+2024-01-28 20:43:33.3961 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:33.39607Z"}
+2024-01-28 20:43:36.6486 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:36.648552Z"}
+2024-01-28 20:43:38.7097 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:38.70972Z"}
+2024-01-28 20:43:58.7369 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:43:58.736919Z"}
+2024-01-28 20:44:01.3227 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:01.322723Z"}
+2024-01-28 20:44:02.9227 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:02.922699Z"}
+2024-01-28 20:44:06.7632 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:06.763064Z"}
+2024-01-28 20:44:08.3813 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:08.381271Z"}
+2024-01-28 20:44:11.0070 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:11.007028Z"}
+2024-01-28 20:44:13.1454 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:13.145372Z"}
+2024-01-28 20:44:14.6533 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:14.653327Z"}
+2024-01-28 20:44:16.5344 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:16.534382Z"}
+2024-01-28 20:44:23.5854 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:23.585389Z"}
+2024-01-28 20:44:41.8048 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:41.804834Z"}
+2024-01-28 20:44:44.2625 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:44.262499Z"}
+2024-01-28 20:44:46.1990 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:46.198962Z"}
+2024-01-28 20:44:48.5881 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:48.588102Z"}
+2024-01-28 20:44:50.5883 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:50.588354Z"}
+2024-01-28 20:44:52.8560 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:44:52.856057Z"}
+2024-01-28 20:45:00.5223 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:00.522291Z"}
+2024-01-28 20:45:03.7429 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:03.742594Z"}
+2024-01-28 20:45:05.4138 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:05.413793Z"}
+2024-01-28 20:45:24.7157 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:24.715704Z"}
+2024-01-28 20:45:26.4154 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:26.415476Z"}
+2024-01-28 20:45:28.6551 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:28.655115Z"}
+2024-01-28 20:45:39.7859 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:39.785954Z"}
+2024-01-28 20:45:41.7198 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:41.719815Z"}
+2024-01-28 20:45:42.9543 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:42.9543Z"}
+2024-01-28 20:45:44.7884 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:44.788423Z"}
+2024-01-28 20:45:46.0714 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:46.071379Z"}
+2024-01-28 20:45:47.8785 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:47.878468Z"}
+2024-01-28 20:45:54.4658 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:54.465787Z"}
+2024-01-28 20:45:55.6674 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:55.667386Z"}
+2024-01-28 20:45:56.9023 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:45:56.902265Z"}
+2024-01-28 20:46:08.5687 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:46:08.568778Z"}
+2024-01-28 20:46:10.6503 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:46:10.650343Z"}
+2024-01-28 20:46:13.2333 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:46:13.233267Z"}
+2024-01-28 20:46:16.0470 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:46:16.047015Z"}
+2024-01-28 20:46:17.1873 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:46:17.187325Z"}
+2024-01-28 20:46:18.2460 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:46:18.245989Z"}
+2024-01-28 20:46:22.2915 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T17:46:22.291248Z"}
+2024-01-28 20:46:25.6800 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T17:46:25.679903Z"}
+2024-01-28 22:33:05.1169 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:33:05.116864Z"}
+2024-01-28 22:33:15.2624 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T19:33:15.262362Z"}
+2024-01-28 22:42:50.9485 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:42:50.948536Z"}
+2024-01-28 22:47:14.4287 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:47:14.428773Z"}
+2024-01-28 22:47:36.2593 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:47:36.259285Z"}
+2024-01-28 22:47:38.7859 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:47:38.785915Z"}
+2024-01-28 22:48:07.1437 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:48:07.143686Z"}
+2024-01-28 22:49:08.8141 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:49:08.814102Z"}
+2024-01-28 22:49:43.5393 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:49:43.539335Z"}
+2024-01-28 22:49:46.8160 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:49:46.816016Z"}
+2024-01-28 22:50:12.0917 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:50:12.091706Z"}
+2024-01-28 22:50:39.5357 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:50:39.535715Z"}
+2024-01-28 22:56:35.0241 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:56:35.024111Z"}
+2024-01-28 22:56:54.7066 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:56:54.706616Z"}
+2024-01-28 22:56:56.1780 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T19:56:56.177935Z"}
+2024-01-28 22:56:56.2134 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 68
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 22:57:01.4304 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetPostFromSlug","Id":null,"CreatedAt":"2024-01-28T19:57:01.430291Z"}
+2024-01-28 22:57:01.4408 ERROR Something went wrong : Entities.Exceptions.PostNotFoundException: The post with id : 404 could not found
+   at Services.PostManager.GetOnePostFromSlug(String slug, Boolean trackChanges) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Services/PostManager.cs:line 56
+   at Presentation.Controllers.PostController.GetPostFromSlug(String slug) in /Users/bugra/Desktop/BlogSite/BlogSite.WebApi/Presentation/Controllers/PostController.cs:line 68
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-28 22:57:47.3628 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:57:47.362785Z"}
+2024-01-28 22:58:01.0976 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:58:01.097533Z"}
+2024-01-28 22:58:08.5767 INFO {"ModelName":"OnActionExecuting","Controller":"Post","Action":"GetAllPosts","Id":null,"CreatedAt":"2024-01-28T19:58:08.576701Z"}

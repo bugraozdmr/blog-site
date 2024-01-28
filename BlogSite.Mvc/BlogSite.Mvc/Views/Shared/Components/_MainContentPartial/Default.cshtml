@@ -1,4 +1,4 @@
-@model List<MainDto>
+@model DataWrapper
 
 
 @{
@@ -9,7 +9,7 @@
 <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
-                    @foreach (var item in Model)
+                    @foreach (var item in Model.Data)
                     {
                         <!-- Post preview-->
                         <div class="post-preview">
@@ -27,7 +27,20 @@
                     }
                     
                     <!-- Pager-->
-                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Eski Postlar →</a></div>
+                    <div class="d-flex justify-content-end mb-4">
+                        @if (@Model.pagenumber == 1)
+                        {
+                            <a class="btn btn-primary text-uppercase" href="https://localhost:7264/?pagesize=@Model.pagesize&pagenumber=@(Model.pagenumber + 1)">Sonraki Sayfa →</a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-primary text-uppercase" href="https://localhost:7264/?pagesize=@Model.pagesize&pagenumber=@(Model.pagenumber - 1)">← Önceki Sayfa</a>
+                            <span style="margin: 0 10px;"></span> <!-- Boşluk ekleniyor -->
+                            <a class="btn btn-primary text-uppercase" href="https://localhost:7264/?pagesize=@Model.pagesize&pagenumber=@(Model.pagenumber + 1)">Sonraki Sayfa →</a>    
+                        }
+                        
+                    </div>
+                    
                 </div>
             </div>
         </div>

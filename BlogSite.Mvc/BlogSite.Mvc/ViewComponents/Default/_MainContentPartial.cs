@@ -34,7 +34,9 @@ public class _MainContentPartial : ViewComponent
         {
             var jsonData = await responseMessage.Content.ReadAsStringAsync();
             var values = JsonConvert.DeserializeObject<DataWrapper>(jsonData);
-            return View(values.Data);
+            values.pagenumber = dto.pagenumber;
+            values.pagesize = dto.pagesize;
+            return View(values);
         }
         return View();
     }
