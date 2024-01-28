@@ -4,4 +4,5 @@ public class FromRouteDto
 {
     public int pagesize { get; set; }
     public int pagenumber { get; set; }
+    public string? query { get; set; }
 }

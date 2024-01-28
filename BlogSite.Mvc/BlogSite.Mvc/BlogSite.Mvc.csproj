@@ -25,13 +25,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="wwwroot\siteTemplate\css\" />
-      <Folder Include="wwwroot\siteTemplate\js\" />
-      <Folder Include="wwwroot\table-07\css\" />
-      <Folder Include="wwwroot\table-07\js\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\..\BlogSite.WebApi\Entities\Entities.csproj" />
     </ItemGroup>
 

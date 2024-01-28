@@ -30,6 +30,11 @@ public class _MainContentPartial : ViewComponent
         
         var responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={dto.pagesize}&pagenumber={dto.pagenumber}");
 
+        if (!string.IsNullOrEmpty(dto.query))
+        {
+            responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={dto.pagesize}&pagenumber={dto.pagenumber}&searchTerm={dto.query}");
+        }
+        
         if (responseMessage.IsSuccessStatusCode)
         {
             var jsonData = await responseMessage.Content.ReadAsStringAsync();
