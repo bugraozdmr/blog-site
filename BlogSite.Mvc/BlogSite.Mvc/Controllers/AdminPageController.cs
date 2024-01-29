@@ -22,7 +22,7 @@ public class AdminPageController : Controller
     
     [HttpGet("adminpage/index")]
     [HttpGet("adminpage")]
-    public async Task<IActionResult> Index(int pagesize,int pagenumber,string? query)
+    public async Task<IActionResult> Index(int pagesize,int pagenumber,string? query,string orderby)
     {
         var client = _httpClientFactory.CreateClient();
 
@@ -30,10 +30,20 @@ public class AdminPageController : Controller
         var responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={pagesize}&pagenumber={pagenumber}");;
         
         if(string.IsNullOrEmpty(query))
-            responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={pagesize}&pagenumber={pagenumber}");
+            if(string.IsNullOrEmpty(orderby))
+                responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={pagesize}&pagenumber={pagenumber}");
+            else
+            {
+                responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={pagesize}&pagenumber={pagenumber}&orderby={orderby}");
+            }
+            
         else
         {
-            responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={pagesize}&pagenumber={pagenumber}&SearchTerm={query}");
+            if(string.IsNullOrEmpty(orderby))
+                responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={pagesize}&pagenumber={pagenumber}&SearchTerm={query}");
+            
+            responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={pagesize}&pagenumber={pagenumber}&SearchTerm={query}&orderby={orderby}");
+            
         }
         
         if (responseMessage.IsSuccessStatusCode)
@@ -62,6 +72,13 @@ public class AdminPageController : Controller
     [HttpPost]
     public async Task<IActionResult> createpost(CreatePostDto dto)
     {
+        
+
+        if (!ModelState.IsValid)
+        {
+            return View(dto);
+        }
+        
         var client = _httpClientFactory.CreateClient();
         var jsondata = JsonConvert.SerializeObject(dto);
         
@@ -76,12 +93,17 @@ public class AdminPageController : Controller
             return RedirectToAction("Index");
         }
         
-        return View();
+        return View(dto);
     }
     
     [HttpGet]
     public async Task<IActionResult> updatepost(int id)
     {
+        if (!ModelState.IsValid)
+        {
+            return View();
+        }
+        
         var client = _httpClientFactory.CreateClient();
         var responseMessage = await client.GetAsync($"https://localhost:7052/api/post/{id}");
         if (responseMessage.IsSuccessStatusCode)
@@ -97,6 +119,7 @@ public class AdminPageController : Controller
     [HttpPost]
     public async Task<IActionResult> updatepost(MainDto model)
     {
+        
         var client = _httpClientFactory.CreateClient();
 
         var updateDto = _mapper.Map<UpdatePostDto>(model);

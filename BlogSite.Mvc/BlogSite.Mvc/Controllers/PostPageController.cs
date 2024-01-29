@@ -22,7 +22,7 @@ public class PostPageController : Controller
         var client = _httpClientFactory.CreateClient();
         var responseMessage = await client.GetAsync($"https://localhost:7052/api/post/get/{slug}");
 
-        var recentlyCreated = await client.GetAsync("https://localhost:7052/api/post/getAllPosts");
+        var recentlyCreated = await client.GetAsync("https://localhost:7052/api/post/getAllPosts?orderBy=id%20desc");
         
         if (responseMessage.IsSuccessStatusCode && recentlyCreated.IsSuccessStatusCode)
         {

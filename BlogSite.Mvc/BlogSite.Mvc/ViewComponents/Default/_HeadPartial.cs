@@ -1,3 +1,4 @@
+using BlogSite.Mvc.Dtos.DefaultDto;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogSite.Mvc.ViewComponents.Default;
