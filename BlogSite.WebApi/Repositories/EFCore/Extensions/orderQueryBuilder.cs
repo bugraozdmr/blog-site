@@ -1,7 +1,7 @@
 using System.Reflection;
 using System.Text;
 
-namespace DefaultNamespace.Extensions;
+namespace Repositories.EFCore.Extensions;
 
 public static class orderQueryBuilder
 {

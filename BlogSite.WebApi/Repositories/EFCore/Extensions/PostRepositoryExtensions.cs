@@ -1,7 +1,7 @@
 using System.Linq.Dynamic.Core;
 using Entities.Models;
 
-namespace DefaultNamespace.Extensions;
+namespace Repositories.EFCore.Extensions;
 
 public static class PostRepositoryExtensions
 {
@@ -23,11 +23,16 @@ public static class PostRepositoryExtensions
     public static IQueryable<Post> Sort(this IQueryable<Post> posts,
         string orderByQueryString)
     {
-        if (!string.IsNullOrWhiteSpace(orderByQueryString))
-            return posts.OrderBy(b => b.Id);
-
+        if (string.IsNullOrWhiteSpace(orderByQueryString))
+        {
+            return posts.OrderBy(b => b.Id);   
+        }
+        
         var orderQuery = orderQueryBuilder.CreateOrderQuery<Post>(orderByQueryString);
 
+        
+        Console.WriteLine(orderQuery);
+        
         if (orderQuery is null)
             return posts.OrderBy(b => b.Id);
 

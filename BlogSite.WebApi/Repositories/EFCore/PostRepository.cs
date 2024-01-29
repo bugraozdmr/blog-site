@@ -1,8 +1,8 @@
-using DefaultNamespace.Extensions;
 using Entities.Models;
 using Entities.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
 using Repositories.EFCore;
+using Repositories.EFCore.Extensions;
 
 namespace DefaultNamespace;
 
