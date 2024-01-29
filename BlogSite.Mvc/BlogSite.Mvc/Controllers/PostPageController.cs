@@ -22,12 +22,24 @@ public class PostPageController : Controller
         var client = _httpClientFactory.CreateClient();
         var responseMessage = await client.GetAsync($"https://localhost:7052/api/post/get/{slug}");
 
-        if (responseMessage.IsSuccessStatusCode)
+        var recentlyCreated = await client.GetAsync("https://localhost:7052/api/post/getAllPosts");
+        
+        if (responseMessage.IsSuccessStatusCode && recentlyCreated.IsSuccessStatusCode)
         {
             var jsondata = await responseMessage.Content.ReadAsStringAsync();
             var value = JsonConvert.DeserializeObject<DataDto>(jsondata);
+
+            var jsondata1 = await recentlyCreated.Content.ReadAsStringAsync();
+            var value1 = JsonConvert.DeserializeObject<DataWrapper>(jsondata1);
+
+            var newDto = new ListAndOnePostDto()
+            {
+                Data = value.Data,
+                Datas = value1.Data
+            };
             
-            return View(value.Data);
+            
+            return View(newDto);
         }
         
         return View();

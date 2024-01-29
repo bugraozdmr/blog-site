@@ -1,4 +1,4 @@
-@model MainDto
+@model ListAndOnePostDto
 
 @{
     Layout = null;
@@ -8,22 +8,48 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>@Model?.Content</p>
+                        <p>@Model?.Data.Content</p>
                         
-                        <a href="#!"><img class="img-fluid" src="@Model?.ImageSecondary" alt="sec_image" style="width: 100%; height: auto;"/></a>
+                        <a href="#!"><img class="img-fluid" src="@Model?.Data.ImageSecondary" alt="sec_image" style="width: 100%; height: auto;"/></a>
                         <!---
                         <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
                                                 
                         Kullanılabilir burası
                         
                         <p>Placeholder text by
-                        <a href="http://spaceipsum.com/">Space Ipsum</a>
-                        &middot; Images by
-                        <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
-                    </p>
+                            <a href="http://spaceipsum.com/">Space Ipsum</a>
+                            &middot; Images by
+                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
+                        </p>
                     
-                    -->
+                        -->
+                        
+                        <!-- Divider-->
+                        <hr class="my-4"/>
+                        
+                        <h2>Son eklenenler</h2>
+                        <hr class="my-4"/>
+                        
+                        @foreach (var item in Model?.Datas)
+                        {
+                            @if(item.Id.Equals(Model.Data.Id))
+                                continue;
+                            <div class="card mb-3">
+                                <img class="card-img-top" src="@item?.ImageMain" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="@Url.Action("Index", "PostPage", new { slug = item.Slug })" style="text-decoration: none;">@item.Title</a></h5>
+                                    <p class="card-text"><a href="@Url.Action("Index", "PostPage", new { slug = item.Slug })" style="text-decoration: none;">@item?.secondaryTitle</a></p>
+                                    <p class="card-text">@item?.CreatedAt 'de oluşturuldu.</p>
+                                </div>
+                            </div>
+                            
+                            <hr class="my-4"/>
+                        }
+                        
                     </div>
+                    
+                    
+                    
                 </div>
             </div>
         </article>
