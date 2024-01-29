@@ -49,19 +49,34 @@
                 <hr class="my-4"/>
             }
 
+            
             <!-- Pager-->
             <div class="d-flex justify-content-end mb-4">
                 <a href="https://localhost:7264/" style="font-size: 36px;text-decoration: none;color: #1c7430; text-align: right"><i class="fa fa-home" aria-hidden="true"></i></a>
                 <span style="margin: 0 10px;"></span>
                 @if (@Model.pagenumber > 1)
                 {
-                    <a class="btn btn-primary text-uppercase" href="https://localhost:7264/?pagesize=@Model.pagesize&pagenumber=@(Model.pagenumber - 1)">← Önceki Sayfa</a>
+                    @if (!string.IsNullOrEmpty(@Model.query))
+                    {
+                        <a class="btn btn-primary text-uppercase" href="https://localhost:7264/?pagesize=@Model.pagesize&pagenumber=@(Model.pagenumber - 1)&searchTerm=@Model.query">← Önceki Sayfa</a>
+                    }
+                    // search termi tutamıyorum çünkü alınınca bir kere çalışıyor dto tutuyor sonra tekrar gidince boşalmış oluyor ve diğerleri gibi tanımlanamıyor
+                    else
+                    {
+                        <a class="btn btn-primary text-uppercase" href="https://localhost:7264/?pagesize=@Model.pagesize&pagenumber=@(Model.pagenumber - 1)">← Önceki Sayfa</a>
+                    }
                 }
 
                 <span style="margin: 0 10px;"></span>
                 <!-- Boşluk ekleniyor -->
-                <a class="btn btn-primary text-uppercase" href="https://localhost:7264/?pagesize=@Model.pagesize&pagenumber=@(Model.pagenumber + 1)">Sonraki Sayfa →</a>
-
+                @if (!string.IsNullOrEmpty(@Model.query))
+                {
+                    <a class="btn btn-primary text-uppercase" href="https://localhost:7264/?pagesize=@Model.pagesize&pagenumber=@(Model.pagenumber + 1)&searchTerm=@Model.query">Sonraki Sayfa →</a>
+                }
+                else
+                {
+                    <a class="btn btn-primary text-uppercase" href="https://localhost:7264/?pagesize=@Model.pagesize&pagenumber=@(Model.pagenumber + 1)">Sonraki Sayfa →</a>
+                }
 
             </div>
 

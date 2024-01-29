@@ -18,8 +18,6 @@ public class _MainContentPartial : ViewComponent
     
     public async Task<IViewComponentResult> InvokeAsync(FromRouteDto dto)
     {
-        Console.WriteLine($"{dto.pagesize}-{dto.pagenumber}");
-        
         if (dto.pagesize == 0 && dto.pagenumber == 0)
         {
             dto.pagesize = 5;
@@ -28,11 +26,16 @@ public class _MainContentPartial : ViewComponent
         
         var client = _httpClientFactory.CreateClient();
         
-        var responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={dto.pagesize}&pagenumber={dto.pagenumber}");
+        HttpResponseMessage responseMessage;
+
 
         if (!string.IsNullOrEmpty(dto.query))
         {
             responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={dto.pagesize}&pagenumber={dto.pagenumber}&searchTerm={dto.query}");
+        }
+        else
+        {
+            responseMessage = await client.GetAsync($"https://localhost:7052/api/post/getAllPosts?pagesize={dto.pagesize}&pagenumber={dto.pagenumber}");
         }
         
         if (responseMessage.IsSuccessStatusCode)
@@ -41,6 +44,7 @@ public class _MainContentPartial : ViewComponent
             var values = JsonConvert.DeserializeObject<DataWrapper>(jsonData);
             values.pagenumber = dto.pagenumber;
             values.pagesize = dto.pagesize;
+            values.query = dto.query == null ? null : dto.query;
             return View(values);
         }
         return View();
